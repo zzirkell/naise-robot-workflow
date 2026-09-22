@@ -1,0 +1,1546 @@
+[
+    {
+        "id": "3133f24b28b61d1a",
+        "type": "tab",
+        "label": "fleet_manager",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "b03640f68a1b0b44",
+        "type": "tab",
+        "label": "external_system",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "f5136a473205e224",
+        "type": "tab",
+        "label": "dash",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "408b6b82cb11ef2c",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "6946eace3a87e437",
+        "type": "ui_tab",
+        "name": "fleet workflow",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "e812f4d381530ecc",
+        "type": "ui_group",
+        "name": "Test Scenarios",
+        "tab": "6946eace3a87e437",
+        "order": 1,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "12adb6446a999804",
+        "type": "ui_group",
+        "name": "output_scenario",
+        "tab": "6946eace3a87e437",
+        "order": 2,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "99a02fb283daa676",
+        "type": "ui_group",
+        "name": "output_trigger",
+        "tab": "6946eace3a87e437",
+        "order": 4,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "f157621f3efcb987",
+        "type": "ui_tab",
+        "name": "Tab 2",
+        "icon": "dashboard",
+        "order": 2
+    },
+    {
+        "id": "3fbfde290d9fc226",
+        "type": "ui_group",
+        "name": "trigger_activation",
+        "tab": "6946eace3a87e437",
+        "order": 3,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "1d04fd362c75ebbe",
+        "type": "ui_group",
+        "name": "Group 1",
+        "tab": "f157621f3efcb987",
+        "order": 1,
+        "disp": true,
+        "width": 6
+    },
+    {
+        "id": "60f51b53fca0540e",
+        "type": "http in",
+        "z": "3133f24b28b61d1a",
+        "name": "",
+        "url": "/mock/robots/:id",
+        "method": "get",
+        "upload": false,
+        "skipBodyParsing": false,
+        "swaggerDoc": "",
+        "x": 290,
+        "y": 500,
+        "wires": [
+            [
+                "caa6ea1bf5e11137"
+            ]
+        ]
+    },
+    {
+        "id": "caa6ea1bf5e11137",
+        "type": "function",
+        "z": "3133f24b28b61d1a",
+        "name": "get_robot",
+        "func": "const fleet = global.get(\"fleet\");\nconst robotId = msg.req.params.id;\n\nconst robot = fleet?.robots?.[robotId];\n\nif (!robot) {\n    msg.statusCode = 404;\n    msg.payload = {\n        source: \"GET_ROBOT\",\n        success: false,\n        reason: \"ROBOT_NOT_FOUND\"\n    };\n    return msg;\n}\n\nmsg.statusCode = 200;\n\nmsg.payload = {\n    id: robot.id,\n    station: robot.station,\n    available: robot.available\n};\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 540,
+        "y": 500,
+        "wires": [
+            [
+                "6aee87f2290b6938"
+            ]
+        ]
+    },
+    {
+        "id": "6aee87f2290b6938",
+        "type": "http response",
+        "z": "3133f24b28b61d1a",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 750,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "166c08c0f9aebad7",
+        "type": "http in",
+        "z": "3133f24b28b61d1a",
+        "name": "",
+        "url": "/mock/robots/:id/active-order",
+        "method": "get",
+        "upload": false,
+        "skipBodyParsing": false,
+        "swaggerDoc": "",
+        "x": 310,
+        "y": 580,
+        "wires": [
+            [
+                "c4b49ae31f1f2d22"
+            ]
+        ]
+    },
+    {
+        "id": "c4b49ae31f1f2d22",
+        "type": "function",
+        "z": "3133f24b28b61d1a",
+        "name": "get_active_order",
+        "func": "const fleet = global.get(\"fleet\");\nconst robotId = msg.req.params.id;\n\nconst robot = fleet?.robots?.[robotId];\n\nif (!robot) {\n    msg.statusCode = 404;\n    msg.payload = {\n        success: false,\n        reason: \"ROBOT_NOT_FOUND\"\n    };\n    return msg;\n}\n\nconst activeOrder = robot.activeOrderId\n    ? fleet.orders[robot.activeOrderId]\n    : null;\n\nmsg.statusCode = 200;\n\nmsg.payload = {\n    robotId: robotId,\n    activeOrder: activeOrder\n};\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 610,
+        "y": 580,
+        "wires": [
+            [
+                "217391b57ddfa31e"
+            ]
+        ]
+    },
+    {
+        "id": "217391b57ddfa31e",
+        "type": "http response",
+        "z": "3133f24b28b61d1a",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 810,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "e9cad8b8174552bf",
+        "type": "comment",
+        "z": "3133f24b28b61d1a",
+        "name": "api calls, \"db\" created in dashboard",
+        "info": "",
+        "x": 280,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "34f8b7f6e1eeefbb",
+        "type": "http in",
+        "z": "3133f24b28b61d1a",
+        "name": "",
+        "url": "/mock/orders/:id/drop-confirmation",
+        "method": "post",
+        "upload": false,
+        "skipBodyParsing": false,
+        "swaggerDoc": "",
+        "x": 280,
+        "y": 660,
+        "wires": [
+            [
+                "e893e0a57a716d92"
+            ]
+        ]
+    },
+    {
+        "id": "e893e0a57a716d92",
+        "type": "function",
+        "z": "3133f24b28b61d1a",
+        "name": "confirm_drop",
+        "func": "const fleet = global.get(\"fleet\");\nconst orderId = msg.req.params.id;\n\nconst order = fleet?.orders?.[orderId];\nconst failures = global.get(\"mockFailures\") || {};\n\nif (failures.dropConfirmation) {\n    msg.statusCode = 503;\n    msg.payload = {\n        success: false,\n        reason: \"SIMULATED_DROP_CONFIRMATION_FAILURE\"\n    };\n    return msg;\n}\n\nif (!order) {\n    msg.statusCode = 404;\n    msg.payload = {\n        success: false,\n        reason: \"ORDER_NOT_FOUND\"\n    };\n    return msg;\n}\n\nif (order.status !== \"PENDING_DROP_CONFIRMATION\") {\n    msg.statusCode = 409;\n    msg.payload = {\n        success: false,\n        reason: \"ORDER_NOT_PENDING_DROP\"\n    };\n    return msg;\n}\n\nconst robot = fleet?.robots?.[order.robotId];\n\nif (!robot) {\n    msg.statusCode = 500;\n    msg.payload = {\n        success: false,\n        reason: \"ROBOT_FOR_ORDER_NOT_FOUND\"\n    };\n    return msg;\n}\n\nif (robot.activeOrderId !== orderId) {\n    msg.statusCode = 409;\n    msg.payload = {\n        success: false,\n        reason: \"ACTIVE_ORDER_MISMATCH\",\n        robotActiveOrderId: robot.activeOrderId,\n        requestedOrderId: orderId\n    };\n    return msg;\n}\n\nif (robot.station !== order.dropoff) {\n    msg.statusCode = 409;\n    msg.payload = {\n        success: false,\n        reason: \"ROBOT_NOT_AT_DROPOFF\",\n        robotStation: robot.station,\n        expectedStation: order.dropoff\n    };\n    return msg;\n}\n\norder.status = \"COMPLETED\";\norder.dropConfirmedAt = new Date().toISOString();\n\nrobot.activeOrderId = null;\n\nglobal.set(\"fleet\", fleet);\n\nmsg.statusCode = 200;\n\nmsg.payload = {\n    success: true,\n    message: \"Drop confirmed\",\n    orderId: orderId,\n    robotId: order.robotId\n};\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 590,
+        "y": 660,
+        "wires": [
+            [
+                "2580c96a1d7d62ec"
+            ]
+        ]
+    },
+    {
+        "id": "2580c96a1d7d62ec",
+        "type": "http response",
+        "z": "3133f24b28b61d1a",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 750,
+        "y": 660,
+        "wires": []
+    },
+    {
+        "id": "cf551ca988788a15",
+        "type": "http in",
+        "z": "3133f24b28b61d1a",
+        "name": "",
+        "url": "/mock/orders",
+        "method": "post",
+        "upload": false,
+        "skipBodyParsing": false,
+        "swaggerDoc": "",
+        "x": 270,
+        "y": 740,
+        "wires": [
+            [
+                "21282cdbb8782e61"
+            ]
+        ]
+    },
+    {
+        "id": "21282cdbb8782e61",
+        "type": "function",
+        "z": "3133f24b28b61d1a",
+        "name": "create_order",
+        "func": "const fleet = global.get(\"fleet\");\nlet nextOrderId = global.get(\"nextOrderId\");\n\nconst request = msg.payload;\nconst failures = global.get(\"mockFailures\") || {};\n\nif (failures.orderCreation) {\n    msg.statusCode = 503;\n    msg.payload = {\n        success: false,\n        reason: \"SIMULATED_ORDER_CREATION_FAILURE\"\n    };\n    return msg;\n}\nif (\n    !request ||\n    !request.robotId ||\n    !request.pickup ||\n    !request.dropoff ||\n    !request.palletId\n) {\n    msg.statusCode = 400;\n    msg.payload = {\n        success: false,\n        reason: \"INVALID_ORDER_REQUEST\"\n    };\n    return msg;\n}\n\nconst robot = fleet?.robots?.[request.robotId];\n\nif (!robot) {\n    msg.statusCode = 404;\n    msg.payload = {\n        success: false,\n        reason: \"ROBOT_NOT_FOUND\"\n    };\n    return msg;\n}\n\nif (!robot.available) {\n    msg.statusCode = 409;\n    msg.payload = {\n        success: false,\n        reason: \"ROBOT_NOT_AVAILABLE\"\n    };\n    return msg;\n}\n\nif (robot.station !== request.pickup) {\n    msg.statusCode = 409;\n    msg.payload = {\n        success: false,\n        reason: \"ROBOT_NOT_AT_PICKUP\",\n        robotStation: robot.station,\n        expectedStation: request.pickup\n    };\n    return msg;\n}\n\nif (robot.activeOrderId !== null) {\n    msg.statusCode = 409;\n    msg.payload = {\n        success: false,\n        reason: \"ROBOT_ALREADY_HAS_ACTIVE_ORDER\",\n        activeOrderId: robot.activeOrderId\n    };\n    return msg;\n}\n\nconst orderId = \"O\" + nextOrderId;\n\nconst newOrder = {\n    id: orderId,\n    robotId: request.robotId,\n    pickup: request.pickup,\n    dropoff: request.dropoff,\n    palletId: request.palletId,\n    status: \"CREATED\",\n    createdAt: new Date().toISOString()\n};\n\nfleet.orders[orderId] = newOrder;\nrobot.activeOrderId = orderId;\n\nglobal.set(\"fleet\", fleet);\nglobal.set(\"nextOrderId\", nextOrderId + 1);\n\nmsg.statusCode = 201;\n\nmsg.payload = {\n    success: true,\n    message: \"Order created\",\n    order: newOrder\n};\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 590,
+        "y": 740,
+        "wires": [
+            [
+                "a8c51eb3b7b90f54"
+            ]
+        ]
+    },
+    {
+        "id": "a8c51eb3b7b90f54",
+        "type": "http response",
+        "z": "3133f24b28b61d1a",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 750,
+        "y": 740,
+        "wires": []
+    },
+    {
+        "id": "98abd2f2dbc6a2d8",
+        "type": "comment",
+        "z": "3133f24b28b61d1a",
+        "name": "info about robot",
+        "info": "",
+        "x": 880,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "04f5a1781826952c",
+        "type": "comment",
+        "z": "3133f24b28b61d1a",
+        "name": "info about its active order",
+        "info": "",
+        "x": 910,
+        "y": 620,
+        "wires": []
+    },
+    {
+        "id": "6dd8f87f7a4ada7c",
+        "type": "comment",
+        "z": "3133f24b28b61d1a",
+        "name": "confirm the drop or not",
+        "info": "",
+        "x": 860,
+        "y": 700,
+        "wires": []
+    },
+    {
+        "id": "0f23d852a82432ec",
+        "type": "comment",
+        "z": "3133f24b28b61d1a",
+        "name": "create an order or not in the sys",
+        "info": "",
+        "x": 850,
+        "y": 800,
+        "wires": []
+    },
+    {
+        "id": "08ef218c77db4f2f",
+        "type": "function",
+        "z": "b03640f68a1b0b44",
+        "name": "prepare_trigger",
+        "func": "const request = msg.payload;\n\nif (\n    !request ||\n    !request.robotId ||\n    !request.stationId ||\n    !request.newOrder ||\n    !request.newOrder.pickup ||\n    !request.newOrder.dropoff ||\n    !request.newOrder.palletId\n) {\n    msg.statusCode = 400;\n    msg.payload = {\n        success: false,\n        stage: \"request_validation\",\n        reason: \"INVALID_TRIGGER_REQUEST\"\n    };\n\n    msg.stopWorkflow = true;\n    return msg;\n}\n\nmsg.trigger = request;\n\n//msg.method = \"GET\";\nmsg.url = \"http://localhost:1880/mock/robots/\" + encodeURIComponent(request.robotId);\n\nmsg.stopWorkflow = false;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 360,
+        "y": 140,
+        "wires": [
+            [
+                "8b5af6dcbc78e284",
+                "c8cd5e811bc03428"
+            ]
+        ]
+    },
+    {
+        "id": "8b5af6dcbc78e284",
+        "type": "http request",
+        "z": "b03640f68a1b0b44",
+        "name": "",
+        "method": "GET",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 570,
+        "y": 140,
+        "wires": [
+            [
+                "460706e069229464"
+            ]
+        ]
+    },
+    {
+        "id": "460706e069229464",
+        "type": "function",
+        "z": "b03640f68a1b0b44",
+        "name": "validate_robot",
+        "func": "const robot = msg.payload;\nconst trigger = msg.trigger;\n\nif (msg.statusCode !== 200) {\n    msg.statusCode = 502;\n    msg.payload = {\n        success: false,\n        stage: \"robot_check\",\n        reason: \"ROBOT_LOOKUP_FAILED\"\n    };\n    return [msg, null];\n}\n\nif (!robot.available) {\n    msg.statusCode = 409;\n    msg.payload = {\n        success: false,\n        stage: \"robot_check\",\n        reason: \"ROBOT_NOT_AVAILABLE\",\n        robotId: robot.id\n    };\n    return [msg, null];\n}\n\nif (robot.station !== trigger.stationId) {\n    msg.statusCode = 409;\n    msg.payload = {\n        success: false,\n        stage: \"robot_check\",\n        reason: \"ROBOT_NOT_AT_DESIGNATED_STATION\",\n        robotId: robot.id,\n        expectedStation: trigger.stationId,\n        actualStation: robot.station\n    };\n    return [msg, null];\n}\n\n//continue workflow\nmsg.robot = robot;\n//prepare next REST call.\n//msg.method = \"GET\";\nmsg.url =\n    \"http://localhost:1880/mock/robots/\" +\n    encodeURIComponent(trigger.robotId) +\n    \"/active-order\";\n\nreturn [null, msg];",
+        "outputs": 2,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 780,
+        "y": 140,
+        "wires": [
+            [
+                "aa928b6dfe52988f"
+            ],
+            [
+                "1fa958f3b80d3739"
+            ]
+        ]
+    },
+    {
+        "id": "397a28ba5030f136",
+        "type": "http in",
+        "z": "b03640f68a1b0b44",
+        "name": "",
+        "url": "/api/trigger",
+        "method": "post",
+        "upload": false,
+        "skipBodyParsing": false,
+        "swaggerDoc": "",
+        "x": 180,
+        "y": 140,
+        "wires": [
+            [
+                "08ef218c77db4f2f"
+            ]
+        ]
+    },
+    {
+        "id": "aa928b6dfe52988f",
+        "type": "http response",
+        "z": "b03640f68a1b0b44",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 970,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "c8cd5e811bc03428",
+        "type": "debug",
+        "z": "b03640f68a1b0b44",
+        "name": "debug 1",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 580,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "1fa958f3b80d3739",
+        "type": "http request",
+        "z": "b03640f68a1b0b44",
+        "name": "",
+        "method": "GET",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 990,
+        "y": 280,
+        "wires": [
+            [
+                "386e032fb248d753"
+            ]
+        ]
+    },
+    {
+        "id": "386e032fb248d753",
+        "type": "function",
+        "z": "b03640f68a1b0b44",
+        "name": "check_active_order",
+        "func": "const result = msg.payload;\nconst activeOrder = result.activeOrder;\n\nif (!activeOrder) {\n    msg.activeOrder = null;\n    return [msg, null, null];\n}\n\nmsg.activeOrder = activeOrder;\n\nif (activeOrder.status === \"PENDING_DROP_CONFIRMATION\") {\n    return [null, msg, null];\n}\n\n//active order exists, but not in the state we are allowed to confirm\nmsg.statusCode = 409;\nmsg.payload = {\n    success: false,\n    stage: \"active_order_check\",\n    reason: \"ACTIVE_ORDER_NOT_PENDING_DROP\",\n    orderId: activeOrder.id,\n    orderStatus: activeOrder.status\n};\n\nreturn [null, null, msg];",
+        "outputs": 3,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1210,
+        "y": 280,
+        "wires": [
+            [
+                "1b8f2fc2c9510407"
+            ],
+            [
+                "07a9406def266dfe"
+            ],
+            [
+                "b44359cf64b063ff"
+            ]
+        ]
+    },
+    {
+        "id": "b44359cf64b063ff",
+        "type": "http response",
+        "z": "b03640f68a1b0b44",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 1430,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "07a9406def266dfe",
+        "type": "function",
+        "z": "b03640f68a1b0b44",
+        "name": "prepare_drop_confirmation",
+        "func": "const order = msg.activeOrder;\n\n//msg.method = \"POST\";\n\nmsg.url =\n    \"http://localhost:1880/mock/orders/\" +\n    encodeURIComponent(order.id) +\n    \"/drop-confirmation\";\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1500,
+        "y": 300,
+        "wires": [
+            [
+                "2f906d584b9eaddf"
+            ]
+        ]
+    },
+    {
+        "id": "2f906d584b9eaddf",
+        "type": "http request",
+        "z": "b03640f68a1b0b44",
+        "name": "",
+        "method": "POST",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 1750,
+        "y": 300,
+        "wires": [
+            [
+                "86a178978b595472"
+            ]
+        ]
+    },
+    {
+        "id": "86a178978b595472",
+        "type": "function",
+        "z": "b03640f68a1b0b44",
+        "name": "check_drop_result",
+        "func": "const dropResult = msg.payload;\n\nif (msg.statusCode !== 200 || !dropResult.success) {\n    msg.statusCode = 502;\n    msg.payload = {\n        success: false,\n        stage: \"drop_confirmation\",\n        reason: \"DROP_CONFIRMATION_FAILED\",\n        details: dropResult\n    };\n\n    return [null, msg];\n}\n\n//drop succeeded → continue to create new order\nreturn [msg, null];",
+        "outputs": 2,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1950,
+        "y": 300,
+        "wires": [
+            [
+                "1b8f2fc2c9510407"
+            ],
+            [
+                "50373a94d9a3138a"
+            ]
+        ]
+    },
+    {
+        "id": "50373a94d9a3138a",
+        "type": "http response",
+        "z": "b03640f68a1b0b44",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 2170,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "1b8f2fc2c9510407",
+        "type": "function",
+        "z": "b03640f68a1b0b44",
+        "name": "prepare_new_order",
+        "func": "const trigger = msg.trigger;\n//post\nmsg.url = \"http://localhost:1880/mock/orders\";\n\nmsg.payload = {\n    robotId: trigger.robotId,\n    pickup: trigger.newOrder.pickup,\n    dropoff: trigger.newOrder.dropoff,\n    palletId: trigger.newOrder.palletId\n};\n\nmsg.headers = {\n    \"Content-Type\": \"application/json\"\n};\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2330,
+        "y": 260,
+        "wires": [
+            [
+                "6cea70e55f96c5cd"
+            ]
+        ]
+    },
+    {
+        "id": "6cea70e55f96c5cd",
+        "type": "http request",
+        "z": "b03640f68a1b0b44",
+        "name": "",
+        "method": "POST",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 2530,
+        "y": 260,
+        "wires": [
+            [
+                "4d8c8c2d86421651"
+            ]
+        ]
+    },
+    {
+        "id": "9f5cb0c0f808daac",
+        "type": "http response",
+        "z": "b03640f68a1b0b44",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 2990,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "9c40b5197b8140a1",
+        "type": "debug",
+        "z": "b03640f68a1b0b44",
+        "name": "debug 2",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 3020,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "715eace50c396e81",
+        "type": "comment",
+        "z": "b03640f68a1b0b44",
+        "name": "is robot alive?",
+        "info": "",
+        "x": 590,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "850f66823fa64e49",
+        "type": "comment",
+        "z": "b03640f68a1b0b44",
+        "name": "does robot have active order?",
+        "info": "",
+        "x": 980,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "5341869964537e2f",
+        "type": "comment",
+        "z": "b03640f68a1b0b44",
+        "name": "dead",
+        "info": "",
+        "x": 970,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "4f88f1f3a1f909ea",
+        "type": "comment",
+        "z": "b03640f68a1b0b44",
+        "name": "yes but not ready to drop, or not there",
+        "info": "",
+        "x": 1510,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "7fcfea0bcdb2a185",
+        "type": "comment",
+        "z": "b03640f68a1b0b44",
+        "name": "yes and needs to drop it",
+        "info": "",
+        "x": 1520,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "f37020f1b1f01618",
+        "type": "comment",
+        "z": "b03640f68a1b0b44",
+        "name": "no, but also is in the right place",
+        "info": "",
+        "x": 1350,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "291ce81993e36812",
+        "type": "comment",
+        "z": "b03640f68a1b0b44",
+        "name": "try to understand if we can do so",
+        "info": "",
+        "x": 1890,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "c193d61103629428",
+        "type": "comment",
+        "z": "b03640f68a1b0b44",
+        "name": "after dropping (or no active), create this order (not always still)",
+        "info": "",
+        "x": 2500,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "4d8c8c2d86421651",
+        "type": "function",
+        "z": "b03640f68a1b0b44",
+        "name": "check_create_result",
+        "func": "const createResult = msg.payload;\n\nif (msg.statusCode !== 201 || !createResult.success) {\n\n    const dropWasPerformed = msg.activeOrder !== null;\n\n    msg.statusCode = 502;\n\n    msg.payload = {\n        success: false,\n        stage: \"order_creation\",\n        reason: \"ORDER_CREATION_FAILED\",\n\n        dropPerformed: dropWasPerformed,\n        previousOrderId:\n            dropWasPerformed\n                ? msg.activeOrder?.id\n                : null,\n\n        details: createResult\n    };\n\n    return msg;\n}\n\nmsg.statusCode = 200;\n\nmsg.payload = {\n    success: true,\n    stage: \"completed\",\n    message: \"Workflow completed successfully\",\n    robotId: msg.trigger.robotId,\n    dropPerformed: msg.activeOrder !== null,\n    previousOrderId: msg.activeOrder?.id || null,\n    newOrder: createResult.order\n};\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2820,
+        "y": 260,
+        "wires": [
+            [
+                "9f5cb0c0f808daac",
+                "9c40b5197b8140a1"
+            ]
+        ]
+    },
+    {
+        "id": "e139363ca4db6dbb",
+        "type": "ui_button",
+        "z": "f5136a473205e224",
+        "name": "",
+        "group": "e812f4d381530ecc",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Pending Drop",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "#2E7D32",
+        "className": "",
+        "icon": "",
+        "payload": "pending_drop",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 360,
+        "y": 340,
+        "wires": [
+            [
+                "f461143377429cc1"
+            ]
+        ]
+    },
+    {
+        "id": "47ab3a292775c714",
+        "type": "ui_button",
+        "z": "f5136a473205e224",
+        "name": "",
+        "group": "e812f4d381530ecc",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "No Active Order",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "#388E3C",
+        "className": "",
+        "icon": "",
+        "payload": "no_active_order",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 360,
+        "y": 400,
+        "wires": [
+            [
+                "f461143377429cc1"
+            ]
+        ]
+    },
+    {
+        "id": "16fbcf535ce209e7",
+        "type": "ui_button",
+        "z": "f5136a473205e224",
+        "name": "",
+        "group": "e812f4d381530ecc",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Robot Unavailable",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "#F57C00",
+        "className": "",
+        "icon": "",
+        "payload": "unavailable",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 372.8230895996094,
+        "y": 453.38653564453125,
+        "wires": [
+            [
+                "f461143377429cc1"
+            ]
+        ]
+    },
+    {
+        "id": "bea5e78b9f216dcc",
+        "type": "ui_button",
+        "z": "f5136a473205e224",
+        "name": "",
+        "group": "e812f4d381530ecc",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Wrong Station",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "#F57C00",
+        "className": "",
+        "icon": "",
+        "payload": "wrong_station",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 360,
+        "y": 500,
+        "wires": [
+            [
+                "f461143377429cc1"
+            ]
+        ]
+    },
+    {
+        "id": "3bf59c8dfd9fca8f",
+        "type": "ui_button",
+        "z": "f5136a473205e224",
+        "name": "",
+        "group": "e812f4d381530ecc",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Order In Progress",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "#F9A825",
+        "className": "",
+        "icon": "",
+        "payload": "in_progress",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 370,
+        "y": 560,
+        "wires": [
+            [
+                "f461143377429cc1"
+            ]
+        ]
+    },
+    {
+        "id": "f461143377429cc1",
+        "type": "function",
+        "z": "f5136a473205e224",
+        "name": "set_test_scenario",
+        "func": "let fleet;\nconst scenario = msg.payload;\nglobal.set(\"mockFailures\", {\n    dropConfirmation: false,\n    orderCreation: false\n});\nswitch (scenario) {\n\n    case \"pending_drop\":\n        fleet = {\n            robots: {\n                R1: {\n                    id: \"R1\",\n                    station: \"D2\",\n                    available: true,\n                    activeOrderId: \"O17\"\n                }\n            },\n            orders: {\n                O17: {\n                    id: \"O17\",\n                    robotId: \"R1\",\n                    pickup: \"D1\",\n                    dropoff: \"D2\",\n                    palletId: \"P100\",\n                    status: \"PENDING_DROP_CONFIRMATION\"\n                }\n            }\n        };\n        break;\n\n    case \"no_active_order\":\n        fleet = {\n            robots: {\n                R1: {\n                    id: \"R1\",\n                    station: \"D2\",\n                    available: true,\n                    activeOrderId: null\n                }\n            },\n            orders: {}\n        };\n        break;\n\n    case \"unavailable\":\n        fleet = {\n            robots: {\n                R1: {\n                    id: \"R1\",\n                    station: \"D2\",\n                    available: false,\n                    activeOrderId: null\n                }\n            },\n            orders: {}\n        };\n        break;\n\n    case \"wrong_station\":\n        fleet = {\n            robots: {\n                R1: {\n                    id: \"R1\",\n                    station: \"D5\",\n                    available: true,\n                    activeOrderId: null\n                }\n            },\n            orders: {}\n        };\n        break;\n\n    case \"in_progress\":\n        fleet = {\n            robots: {\n                R1: {\n                    id: \"R1\",\n                    station: \"D2\",\n                    available: true,\n                    activeOrderId: \"O17\"\n                }\n            },\n            orders: {\n                O17: {\n                    id: \"O17\",\n                    robotId: \"R1\",\n                    pickup: \"D1\",\n                    dropoff: \"D2\",\n                    palletId: \"P100\",\n                    status: \"IN_PROGRESS\"\n                }\n            }\n        };\n        break;\n    case \"drop_failure\":\n    fleet = {\n        robots: {\n            R1: {\n                id: \"R1\",\n                station: \"D2\",\n                available: true,\n                activeOrderId: \"O17\"\n            }\n        },\n        orders: {\n            O17: {\n                id: \"O17\",\n                robotId: \"R1\",\n                pickup: \"D1\",\n                dropoff: \"D2\",\n                palletId: \"P100\",\n                status: \"PENDING_DROP_CONFIRMATION\"\n            }\n        }\n    };\n\n    global.set(\"mockFailures\", {\n        dropConfirmation: true,\n        orderCreation: false\n    });\n    break;\n\n    case \"create_failure\":\n        fleet = {\n            robots: {\n                R1: {\n                    id: \"R1\",\n                    station: \"D2\",\n                    available: true,\n                    activeOrderId: \"O17\"\n                }\n            },\n            orders: {\n                O17: {\n                    id: \"O17\",\n                    robotId: \"R1\",\n                    pickup: \"D1\",\n                    dropoff: \"D2\",\n                    palletId: \"P100\",\n                    status: \"PENDING_DROP_CONFIRMATION\"\n                }\n            }\n        };\n\n        global.set(\"mockFailures\", {\n            dropConfirmation: false,\n            orderCreation: true\n        });\n        break;\n    default:\n        return null;\n}\n\nglobal.set(\"fleet\", fleet);\nglobal.set(\"nextOrderId\", 18);\n\n// message for next dashboard node\nmsg.payload = {\n    scenario: scenario,\n    fleet: fleet\n};\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 690,
+        "y": 420,
+        "wires": [
+            [
+                "e582879b59c115e2"
+            ]
+        ]
+    },
+    {
+        "id": "e582879b59c115e2",
+        "type": "function",
+        "z": "f5136a473205e224",
+        "name": "display_fleet_state",
+        "func": "const fleet = global.get(\"fleet\");\nconst robot = fleet?.robots?.R1;\n\nconst order = robot?.activeOrderId\n    ? fleet.orders[robot.activeOrderId]\n    : null;\n\nreturn [\n    { payload: robot?.id || \"NONE\" },\n    { payload: robot?.station || \"NONE\" },\n    { payload: robot?.available ? \"YES\" : \"NO\" },\n    { payload: robot?.activeOrderId || \"NONE\" },\n    { payload: order?.status || \"NONE\" },\n    { payload: order?.pickup || \"-\" },\n    { payload: order?.dropoff || \"-\" },\n    { payload: order?.palletId || \"-\" }\n];",
+        "outputs": 8,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 830,
+        "y": 540,
+        "wires": [
+            [
+                "ab49a7540638c657"
+            ],
+            [
+                "5c6132075559fd41"
+            ],
+            [
+                "cc4dbde786725a60"
+            ],
+            [
+                "e3ad33520a34e24e"
+            ],
+            [
+                "f76b73c1308c8373"
+            ],
+            [
+                "8f3ebcfeebe9a8c2"
+            ],
+            [
+                "681251f424fc269d"
+            ],
+            [
+                "33b999d37ef41d0e"
+            ]
+        ]
+    },
+    {
+        "id": "ab49a7540638c657",
+        "type": "ui_text",
+        "z": "f5136a473205e224",
+        "group": "12adb6446a999804",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Robot",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 1090,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "5c6132075559fd41",
+        "type": "ui_text",
+        "z": "f5136a473205e224",
+        "group": "12adb6446a999804",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Station",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 1100,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "cc4dbde786725a60",
+        "type": "ui_text",
+        "z": "f5136a473205e224",
+        "group": "12adb6446a999804",
+        "order": 7,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Available",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 1100,
+        "y": 560,
+        "wires": []
+    },
+    {
+        "id": "e3ad33520a34e24e",
+        "type": "ui_text",
+        "z": "f5136a473205e224",
+        "group": "12adb6446a999804",
+        "order": 8,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Active Order",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 1110,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "f76b73c1308c8373",
+        "type": "ui_text",
+        "z": "f5136a473205e224",
+        "group": "12adb6446a999804",
+        "order": 9,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Order Status",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 1110,
+        "y": 640,
+        "wires": []
+    },
+    {
+        "id": "8f3ebcfeebe9a8c2",
+        "type": "ui_text",
+        "z": "f5136a473205e224",
+        "group": "12adb6446a999804",
+        "order": 10,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Pickup",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 1090,
+        "y": 680,
+        "wires": []
+    },
+    {
+        "id": "681251f424fc269d",
+        "type": "ui_text",
+        "z": "f5136a473205e224",
+        "group": "12adb6446a999804",
+        "order": 11,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": " Dropoff",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 1100,
+        "y": 720,
+        "wires": []
+    },
+    {
+        "id": "33b999d37ef41d0e",
+        "type": "ui_text",
+        "z": "f5136a473205e224",
+        "group": "12adb6446a999804",
+        "order": 12,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Pallet",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 1090,
+        "y": 760,
+        "wires": []
+    },
+    {
+        "id": "1333e1118d6993a7",
+        "type": "function",
+        "z": "f5136a473205e224",
+        "name": "build_trigger_request",
+        "func": "msg.url = \"http://localhost:1880/api/trigger\";\n\nmsg.headers = {\n    \"Content-Type\": \"application/json\"\n};\n\nmsg.payload = {\n    robotId: \"R1\",\n    stationId: \"D2\",\n    newOrder: {\n        pickup: \"D2\",\n        dropoff: \"D3\",\n        palletId: \"P200\"\n    }\n};\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 580,
+        "y": 860,
+        "wires": [
+            [
+                "0dbede113bd3bf46"
+            ]
+        ]
+    },
+    {
+        "id": "500605e7ebd6b35f",
+        "type": "ui_button",
+        "z": "f5136a473205e224",
+        "name": "",
+        "group": "3fbfde290d9fc226",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Trigger Workflow",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 350,
+        "y": 860,
+        "wires": [
+            [
+                "1333e1118d6993a7"
+            ]
+        ]
+    },
+    {
+        "id": "0dbede113bd3bf46",
+        "type": "http request",
+        "z": "f5136a473205e224",
+        "name": "",
+        "method": "POST",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 830,
+        "y": 860,
+        "wires": [
+            [
+                "5f67c1bc48d3ee5a",
+                "e582879b59c115e2"
+            ]
+        ]
+    },
+    {
+        "id": "5f67c1bc48d3ee5a",
+        "type": "function",
+        "z": "f5136a473205e224",
+        "name": "display_workflow_result",
+        "func": "const result = msg.payload;\n\nreturn [\n    {\n        payload: result?.success === true\n            ? \"SUCCESS\"\n            : \"FAILED\"\n    },\n    {\n        payload: result?.stage || \"-\"\n    },\n    {\n        payload:\n            result?.message ||\n            result?.reason ||\n            \"-\"\n    },\n    {\n        payload:\n            result?.dropPerformed === true\n                ? \"YES\"\n                : result?.dropPerformed === false\n                    ? \"NO\"\n                    : \"-\"\n    },\n    {\n        payload: result?.previousOrderId || \"-\"\n    },\n    {\n        payload: result?.newOrder?.id || \"-\"\n    },\n    {\n        payload: result?.newOrder?.status || \"-\"\n    }\n];",
+        "outputs": 7,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1210,
+        "y": 840,
+        "wires": [
+            [
+                "c09fa685cb590890"
+            ],
+            [
+                "cb020f0249494f23"
+            ],
+            [
+                "45d011f6f59e6f7a"
+            ],
+            [
+                "9f32201e2bb21f8f"
+            ],
+            [
+                "39a21cb807e5465f"
+            ],
+            [
+                "63f68737e5b5b121"
+            ],
+            [
+                "ccbad1c9a1204f75"
+            ]
+        ]
+    },
+    {
+        "id": "c09fa685cb590890",
+        "type": "ui_text",
+        "z": "f5136a473205e224",
+        "group": "99a02fb283daa676",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Result",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 1410,
+        "y": 740,
+        "wires": []
+    },
+    {
+        "id": "cb020f0249494f23",
+        "type": "ui_text",
+        "z": "f5136a473205e224",
+        "group": "99a02fb283daa676",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Stage",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 1410,
+        "y": 780,
+        "wires": []
+    },
+    {
+        "id": "45d011f6f59e6f7a",
+        "type": "ui_text",
+        "z": "f5136a473205e224",
+        "group": "99a02fb283daa676",
+        "order": 7,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Message",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 1420,
+        "y": 820,
+        "wires": []
+    },
+    {
+        "id": "9f32201e2bb21f8f",
+        "type": "ui_text",
+        "z": "f5136a473205e224",
+        "group": "99a02fb283daa676",
+        "order": 8,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Drop Performed",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 1440,
+        "y": 860,
+        "wires": []
+    },
+    {
+        "id": "39a21cb807e5465f",
+        "type": "ui_text",
+        "z": "f5136a473205e224",
+        "group": "99a02fb283daa676",
+        "order": 9,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Previous Order",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 1440,
+        "y": 900,
+        "wires": []
+    },
+    {
+        "id": "63f68737e5b5b121",
+        "type": "ui_text",
+        "z": "f5136a473205e224",
+        "group": "99a02fb283daa676",
+        "order": 10,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "New Order",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 1430,
+        "y": 940,
+        "wires": []
+    },
+    {
+        "id": "ccbad1c9a1204f75",
+        "type": "ui_text",
+        "z": "f5136a473205e224",
+        "group": "99a02fb283daa676",
+        "order": 11,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "New Order Status",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 1450,
+        "y": 980,
+        "wires": []
+    },
+    {
+        "id": "dc7a5c09f5f623eb",
+        "type": "ui_button",
+        "z": "f5136a473205e224",
+        "name": "",
+        "group": "e812f4d381530ecc",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Drop API Failure",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "#C62828",
+        "className": "",
+        "icon": "",
+        "payload": "drop_failure",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 400,
+        "y": 640,
+        "wires": [
+            [
+                "f461143377429cc1"
+            ]
+        ]
+    },
+    {
+        "id": "a546194de1fe0262",
+        "type": "ui_button",
+        "z": "f5136a473205e224",
+        "name": "",
+        "group": "e812f4d381530ecc",
+        "order": 7,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Order Creation Failure",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "#C62828",
+        "className": "",
+        "icon": "",
+        "payload": "create_failure",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 420,
+        "y": 700,
+        "wires": [
+            [
+                "f461143377429cc1"
+            ]
+        ]
+    }
+]

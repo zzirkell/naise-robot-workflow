@@ -1,0 +1,12 @@
+{
+    "name": "node-red-project",
+    "description": "A Node-RED Project",
+    "version": "0.0.1",
+    "private": true,
+    "dependencies": {
+        "@flowfuse/node-red-dashboard-2-ui-led": "~1.1.0",
+        "node-red-contrib-ui-led": "~0.4.11",
+        "node-red-dashboard": "~3.6.6",
+        "node-red-dashboard-2-logo84-energiam": "~0.1.8"
+    }
+}

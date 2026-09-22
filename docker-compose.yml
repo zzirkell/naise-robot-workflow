@@ -1,0 +1,18 @@
+services:
+  node-red:
+    image: nodered/node-red:latest
+    container_name: naise-node-red
+
+    ports:
+      - "1880:1880"
+
+    volumes:
+      - ./node-red-data:/data
+
+    command: >
+      sh -c "cd /data &&
+             npm install --omit=dev &&
+             cd /usr/src/node-red &&
+             npm start -- --userDir /data"
+
+    restart: unless-stopped
